@@ -1,0 +1,1208 @@
+2020-04-30 17:45:53,964 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> overseaVo  [in template "config/templates/overseaAssistance.html" at line 146, column 32]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list overseaVo.list as item  [in template "config/templates/overseaAssistance.html" at line 146, column 25]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:85)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:48)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:98)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 17:45:53,976 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 17:49:33,310 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> overseaVo  [in template "config/templates/overseaAssistance.html" at line 146, column 32]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list overseaVo.list as item  [in template "config/templates/overseaAssistance.html" at line 146, column 25]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:85)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:48)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:98)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 17:49:33,321 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 17:58:30,385 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588240708363.pdf]
+2020-04-30 18:00:50,022 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588240816693.pdf]
+2020-04-30 18:01:08,043 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a sequence or collection, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> list  [in template "config/templates/overseaAssistance.html" at line 146, column 32]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list list as item  [in template "config/templates/overseaAssistance.html" at line 146, column 25]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonSequenceOrCollectionException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:349)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:01:08,059 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:04:32,887 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:04:32,900 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:05:41,790 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:05:41,808 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:06:44,742 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:10:43,087 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:11:04,890 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:13:04,747 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:13:04,760 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:13:27,741 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> TestFreemarkerBean  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${TestFreemarkerBean.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:13:27,752 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:14:46,410 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:33)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:14:46,421 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:16:04,734 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:16:04,746 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:16:22,269 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:112)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:16:22,282 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:17:39,579 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588241857816.pdf]
+2020-04-30 18:18:17,921 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588241896008.pdf]
+2020-04-30 18:24:47,511 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588242283308.pdf]
+2020-04-30 18:25:03,729 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:25:03,742 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:25:32,789 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> item  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:25:32,800 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:25:45,568 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> listT  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listT.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:25:45,582 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:26:49,850 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:27:02,216 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:27:44,455 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> aa  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${aa.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:27:49,415 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:28:50,717 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> aa  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${aa.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:28:50,731 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:30:33,192 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected an extended hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> listT  [in template "config/templates/overseaAssistance.html" at line 146, column 32]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #list listT as name, age  [in template "config/templates/overseaAssistance.html" at line 146, column 25]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonExtendedHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForHashListing(IteratorBlock.java:424)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:272)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:30:33,204 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:31:23,443 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588242679083.pdf]
+2020-04-30 18:32:19,028 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:34:05,587 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588242841942.pdf]
+2020-04-30 18:34:23,354 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588242859646.pdf]
+2020-04-30 18:35:12,307 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> listT  [in template "config/templates/overseaAssistance.html" at line 148, column 31]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listT.age}  [in template "config/templates/overseaAssistance.html" at line 148, column 29]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:35:12,318 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:37:39,857 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> user  [in template "config/templates/overseaAssistance.html" at line 149, column 39]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${user.name}  [in template "config/templates/overseaAssistance.html" at line 149, column 37]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:256)
+	at freemarker.core.Items.accept(Items.java:54)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.ListElseContainer.accept(ListElseContainer.java:40)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:37:39,868 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:38:10,935 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243086680.pdf]
+2020-04-30 18:39:41,629 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243176110.pdf]
+2020-04-30 18:40:33,050 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> user  [in template "config/templates/overseaAssistance.html" at line 149, column 39]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${user.namer}  [in template "config/templates/overseaAssistance.html" at line 149, column 37]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:256)
+	at freemarker.core.Items.accept(Items.java:54)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.ListElseContainer.accept(ListElseContainer.java:40)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:40:33,063 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:40:52,608 freemarker.runtime [main] ERROR freemarker.runtime                       -Error executing FreeMarker template
+FreeMarker template error:
+For "." left-hand operand: Expected a hash, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> user  [in template "config/templates/overseaAssistance.html" at line 149, column 39]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${user.name}  [in template "config/templates/overseaAssistance.html" at line 149, column 37]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonHashException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:83)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:256)
+	at freemarker.core.Items.accept(Items.java:54)
+	at freemarker.core.Environment.visit(Environment.java:366)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:335)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:242)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:642)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:107)
+	at freemarker.core.ListElseContainer.accept(ListElseContainer.java:40)
+	at freemarker.core.Environment.visit(Environment.java:330)
+	at freemarker.core.Environment.visit(Environment.java:336)
+	at freemarker.core.Environment.process(Environment.java:309)
+	at freemarker.template.Template.process(Template.java:384)
+	at cn.com.sinosoft.app.freemaker.HtmlGenerator.generate(HtmlGenerator.java:35)
+	at cn.com.sinosoft.app.pdf.PdfDocumentGenerator.generate(PdfDocumentGenerator.java:54)
+	at cn.com.sinosoft.test.TestPdfGenerator.test(TestPdfGenerator.java:121)
+	at cn.com.sinosoft.test.TestPdfGenerator.testGenerate(TestPdfGenerator.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-04-30 18:40:52,638 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:41:24,637 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243282577.pdf]
+2020-04-30 18:42:08,161 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243326279.pdf]
+2020-04-30 18:43:54,728 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243432568.pdf]
+2020-04-30 18:45:07,288 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243505359.pdf]
+2020-04-30 18:47:53,138 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:49:20,802 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] ERROR om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is failed to generate
+2020-04-30 18:50:26,739 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243824698.pdf]
+2020-04-30 18:51:16,545 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588243874663.pdf]
+2020-04-30 18:55:38,349 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588244136092.pdf]
+2020-04-30 18:56:14,436 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588244172530.pdf]
+2020-04-30 18:56:42,103 cn.com.sinosoft.app.pdf.PdfDocumentGenerator [main] INFO  om.sinosoft.app.pdf.PdfDocumentGenerator -The document [primarykey=1234567890123456] is generated successfully,and stored in [/Users/david/runjingchina/doc-render/doc-render/tmp/1588244200129.pdf]
